@@ -1,3 +1,1 @@
-require 'rspec/core'
-require 'diff_matcher'
-require 'diff_matcher/rspec_3/matchers'
+require 'diff_matcher/rspec'

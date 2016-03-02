@@ -202,11 +202,11 @@ puts DiffMatcher::difference(expected, [1, 2.00, "3"])
 # => Where, - 1 missing, + 1 additional, | 2 match_matcher
 ```
 
-When `actual` to be matched against some custom logic, an object with RSpec Matcher
-interface can be used. Methods `#mathches?(actual)`, `#description` and `#failure_message`
-must be implemented.
+When `actual` is matched against some custom logic, an object with an RSpec Matcher
+interface can be used. (NB. `#mathches?(actual)`, `#description` and `#failure_message`
+methods must be implemented.)
 
-Sure, you can take one of RSpec matchers and do not implement your own.
+So you can use one of the RSpec matchers or you can implement your own.
 
 ```ruby
 class BeAWeekend
